@@ -22,8 +22,8 @@ function loadParagraph() {
   document.addEventListener("keydown", () => inpField.focus());
   typingText.addEventListener("click", () => inpField.focus());
 }
-// let person = prompt("Please enter your name", "");
-let person = "ME"
+let person = prompt("Please enter your name", "");
+// let person = "ME"
 if (person != null) {
   document.getElementById("name").innerHTML =
   "Hello " + person;
