@@ -3,12 +3,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Typing Speed Test Game | CodingNepal</title>
+    <title>Typing Contest</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dialog.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
   </head>
   <body>
+    <dialog>
+      <button autofocus onclick="document.querySelector('dialog').close();">Close</button>
+      <p>Keyboard</p>
+      <img src="fingers.png"/>
+    </dialog>
+    <header>
+      <img src="logo.jpg" alt=""/>
+      <h1 id="name">You name</h1>
+      <button class="keyboard" onclick="document.querySelector('dialog').showModal(); ">
+        <img  src="keyboard.svg">
+      </button>
+      
+    </header>
+ 
+    <main>
+      
     <div class="wrapper">
+      <h2>
+        You have to type text that you see in the box
+      </h2>
       <input type="text" class="input-field" />
       <div class="content-box">
         <div class="typing-text">
@@ -18,18 +39,18 @@
           <ul class="result-details">
             <li class="time">
               <p>Time Left:</p>
-              <span><b>60</b>s</span>
+              <span><b>_</b></span>
             </li>
             <li class="mistake">
               <p>Mistakes:</p>
               <span>0</span>
             </li>
             <li class="wpm">
-              <p>WPM:</p>
+              <p><abbr title="Word per minute">WPM </abbr>:</p>
               <span>0</span>
             </li>
             <li class="cpm">
-              <p>CPM:</p>
+              <p><abbr title="Characters per minute">CPM</abbr>:</p>
               <span>0</span>
             </li>
           </ul>
@@ -37,7 +58,7 @@
         </div>
       </div>
     </div>
-
+    </main>
     <script src="js/paragraphs.js"></script>
     <script src="js/script.js"></script>
   </body>

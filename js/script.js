@@ -7,7 +7,7 @@ const typingText = document.querySelector(".typing-text p"),
   cpmTag = document.querySelector(".cpm span");
 
 let timer,
-  maxTime = 60,
+  maxTime = 60 * 5,
   timeLeft = maxTime,
   charIndex = (mistakes = isTyping = 0);
 
@@ -21,6 +21,12 @@ function loadParagraph() {
   //   typingText.querySelectorAll("span")[0].classList.add("active");
   document.addEventListener("keydown", () => inpField.focus());
   typingText.addEventListener("click", () => inpField.focus());
+}
+// let person = prompt("Please enter your name", "");
+let person = "ME"
+if (person != null) {
+  document.getElementById("name").innerHTML =
+  "Hello " + person;
 }
 
 function initTyping() {
