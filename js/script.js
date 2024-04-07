@@ -1,3 +1,5 @@
+let person = prompt("Please enter your name", "");
+let grade = prompt("Please enter your grade", "");
 const typingText = document.querySelector(".typing-text p"),
   inpField = document.querySelector(".wrapper .input-field"),
   tryAgainBtn = document.querySelector(".content button"),
@@ -22,16 +24,17 @@ function loadParagraph() {
   document.addEventListener("keydown", () => inpField.focus());
   typingText.addEventListener("click", () => inpField.focus());
 }
-let person = prompt("Please enter your name", "");
+
 // let person = "ME"
 if (person != null) {
-  document.getElementById("name").innerHTML =
-  "Hello " + person;
+  document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`
 }
+
 
 function initTyping() {
   let characters = typingText.querySelectorAll("span");
   let typedChar = inpField.value.split("")[charIndex];
+  console.log(charIndex, characters.length);
   if (charIndex < characters.length - 1 && timeLeft > 0) {
     if (!isTyping) {
       timer = setInterval(initTimer, 1000);
@@ -66,6 +69,9 @@ function initTyping() {
     mistakeTag.innerText = mistakes;
     cpmTag.innerText = charIndex - mistakes;
   } else {
+    alert("You've done it!")
+    // store to LS
+    window.location.replace(`certificate.html?name=${person}&grade=${grade}`)
     clearInterval(timer);
     inpField.value = "";
   }

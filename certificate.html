@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 1cm;
+    }
+
+    article {
+      font-family: 'Courier New', Courier, monospace;
+      margin: auto;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    img {
+      width: 15rem;
+    }
+
+    .certificate {
+      border-width: 2rem;
+      border-style: solid;
+      border-image: linear-gradient(to bottom, rgb(43, 42, 93), rgb(233, 51, 35)) 1;
+    }
+
+    @media print {
+      .certificate {
+        page-break-after: always;
+        page-break-inside: avoid;
+      }
+
+      .header,
+      .body,
+      .footer {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .header {
+        padding-top: 50px;
+        text-align: center;
+      }
+
+      .body {
+        padding: 20px;
+      }
+
+      .footer {
+        padding-bottom: 50px;
+        text-align: center;
+        border-top: 1px solid black;
+      }
+    }
+  </style>
+  <script>
+    function hydrate() {
+      let paramString = window.location.search.split('?')[1];
+      let mySearchParams = new URLSearchParams(paramString);
+      for (const [key, value] of mySearchParams.entries()) {
+        console.log(key, document.getElementById('name'))
+        document.getElementById(key).innerHTML = value
+      }
+    }
+
+
+  </script>
+</head>
+
+<body onload="hydrate()">
+  <article class="certificate">
+    <div class="header">
+      <img src="keyboard.svg">
+      <h1>Certificate of participant in typing contest</h1>
+    </div>
+    <div class="body">
+      <p>This document certify that <span id="name"></span> from <span id="grade"></span> of Georgian-American High School</p>
+      <img src="logo.jpg" />
+      <p>succesfully participated typing contest with typing speed <span id="wpm"></span> word per minute</p>
+    </div>
+    <div class="footer">
+      
+      <p>Date: [Date]</p>
+    </div>
+  </article>
+</body>
+
+</html>

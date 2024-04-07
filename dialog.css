@@ -9,6 +9,7 @@ dialog[open] {
   
   /*   Closed state of the dialog   */
   dialog {
+    box-sizing: content-box;
     opacity: 0;
     transform: scaleY(0);
     transition:
@@ -19,9 +20,19 @@ dialog[open] {
     /* Equivalent to
     transition: all 0.7s allow-discrete; */
   }
-  dialog > button{
-    right: 0
+  dialog img{
+    display: flex;
+    margin: 4rem auto;
   }
+button#close{
+    position: absolute;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    right: 0.5rem;
+    top: 0.5rem
+}
   
   /*   Before-open state  */
   /* Needs to be after the previous dialog[open] rule to take effect,
