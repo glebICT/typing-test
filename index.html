@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="dialog.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
   </head>
-  <body>
+  <body onload="init()">
     <dialog>
       <button autofocus id="close" onclick="document.querySelector('dialog').close();">❌</button>
       <img src="fingers.png"/>
@@ -29,7 +30,7 @@
       <h2>
         You have to type text that you see in the box
       </h2>
-      <input type="text" class="input-field" />
+      <input type="text" class="input-field" oninput="initTyping()"/>
       <div class="content-box">
         <div class="typing-text">
           <p></p>
@@ -53,12 +54,11 @@
               <span>0</span>
             </li>
           </ul>
-          <button>Try Again</button>
+          <button onclick="resetGame" type="button">Try Again</button>
         </div>
       </div>
     </div>
     </main>
-    <script src="js/paragraphs.js"></script>
-    <script src="js/script.js"></script>
+   
   </body>
 </html>

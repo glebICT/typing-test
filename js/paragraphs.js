@@ -1,4 +1,8 @@
 const paragraphs = [
+  "Once upon a time",
+  "Once upon a time, in a land far away, lived a squirrel named Sammy.",
+  "Once upon a time, in a land far away, lived a squirrel named Sammy. Sammy loved exploring the forest, finding shiny acorns.",
+  "Once upon a time, in a faraway land, a curious little squirrel named Sammy lived. He loved exploring the forest and collecting shiny acorns. One day, he collected 10 acorns from 3 oak trees. Later, he spotted his friend and called out, 'Hello, Lilly!'",
   "Once upon a time, in a faraway land, there lived a curious little squirrel named Sammy. Sammy loved to explore the forest and collect shiny acorns. One sunny morning, as Sammy scampered through the trees, he spotted a mysterious trail of glittering leaves. Intrigued, Sammy followed the trail deeper into the woods...",
   // "Once.",
   // "Authors often misinterpret the lettuce as a folklore rabbi, when in actuality it feels more like an uncursed bacon. Pursued distances show us how mother-in-laws can be charleses. Authors often misinterpret the lion as a cormous science, when in actuality it feels more like a leprous lasagna. Recent controversy aside, their band was, in this moment, a racemed suit. The clutch of a joke becomes a togaed chair. The first pickled chess is.",
