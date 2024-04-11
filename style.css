@@ -194,6 +194,15 @@ table {
   margin: 1rem auto;
 
 }
+td.orange{
+  background-color: rgb(238,134,79);
+}
+td.violet{
+  background-color: rgb(135,83,238);
+}
+td.purple{
+  background-color: rgb(238,84,233);
+}
 td.red{
   background-color: rgb(220,109,106);
 }
