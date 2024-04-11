@@ -117,6 +117,7 @@ function init(){
     document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`;
     const level = Number(parseInt(grade))
     maxTime = maxTime * level
+    console.log(maxTime);
     loadParagraph(level);
   }
 }
