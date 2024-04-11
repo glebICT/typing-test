@@ -3,7 +3,7 @@ let grade = prompt("Please enter your grade", "");
 let wpm = 0;
 let mistakes = 0;
 let timer,
-  maxTime = 60 * 5,
+  maxTime = 60,
   timeLeft = maxTime,
   charIndex = (mistakes = isTyping = 0);
 
@@ -113,10 +113,11 @@ function resetGame() {
 }
 
 function init(){
-  if (person != null) {
-    document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`
+  if (person != null && grade != null) {
+    document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`;
+    const level = Number(parseInt(grade))
+    maxTime = maxTime * level
+    loadParagraph(level);
   }
-
-  loadParagraph(Number(parseInt(grade)));
 }
 
