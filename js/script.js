@@ -1,4 +1,4 @@
-let person = prompt("Please enter your name", "");
+let person = prompt("Please enter your full name", "");
 let grade = prompt("Please enter your grade", "");
 let wpm = 0;
 let mistakes = 0;
@@ -116,7 +116,8 @@ function init(){
   if (person != null && grade != null) {
     document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`;
     const level = Number(parseInt(grade))
-    maxTime = maxTime * level
+    maxTime = maxTime * level;
+    timeLeft = maxTime;
     console.log(maxTime);
     loadParagraph(level);
   }
