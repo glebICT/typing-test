@@ -22,7 +22,9 @@ dialog[open] {
   }
   dialog img{
     display: flex;
-    margin: 4rem auto;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
   }
 button#close{
     position: absolute;
