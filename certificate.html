@@ -18,7 +18,18 @@
       text-align: center;
       flex-direction: column;
     }
-
+    h1{
+      font-size: 2.5rem;
+    }
+    h2{
+      font-size: 2rem;
+    }
+    h3{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1rem;
+    }
     img {
       width: 15rem;
     }
@@ -52,9 +63,10 @@
       }
 
       .footer {
-        padding-bottom: 50px;
+        padding: 3rem 0;
         text-align: center;
-        border-top: 1px solid black;
+        display: flex;
+        justify-content: space-around;
       }
     }
   </style>
@@ -73,17 +85,22 @@
   <article class="certificate">
     <div class="header">
       <img src="keyboard.svg">
-      <h1>Certificate of Participation in Typing Contest</h1>
+      <h1>Certificate of Participation</h1>
+      <h2>in Typing Contest</h2>
     </div>
     <div class="body">
-      <p>This document certifies that  <span id="name"></span> from <span id="grade"></span> grade of Georgian-American High School</p>
-      <p>successfully participated in a keyboard typing contest with typing speed <span id="wpm"></span> word per minute and <span id="mistakes"></span> mistakes</p>
+      <p>This document certifies that  </p>
+      <p><span id="name"></span> from <span id="grade"></span> grade of </p>
+      <h3>Georgian-American High School</h3>
+      <p>successfully participated in </p>
+      <p>a keyboard typing contest with </p>
+        <p>typing speed <b id="wpm"></b> word per minute and <b id="mistakes"></b> mistakes</p>
       <img src="logo.jpg" />
     </div>
-    <div class="footer">
-      <span>Date: ______________________</span>
-      <span>Signature: _________________</span>
-    </div>
+    <footer class="footer">
+      <span>Date: _____________</span>
+      <span>Signature: __________________________</span>
+    </footer>
   </article>
 </body>
 

@@ -182,3 +182,18 @@ li:not(:first-child) span {
     margin-top: 10px;
   }
 }
+
+table, td, th {
+  border: 1px solid buttontext;
+  text-align: center;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1rem auto;
+
+}
+td.red{
+  background-color: rgb(220,109,106);
+}
