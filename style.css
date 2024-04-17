@@ -206,3 +206,19 @@ td.purple{
 td.red{
   background-color: rgb(220,109,106);
 }
+td.yellow{
+  background-color: rgb(238,231,107);
+}
+td.green{
+  background-color: rgb(143,200,67);
+}
+.tables{
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  margin: auto;
+  gap: 1rem;
+}
+.tables div{
+  display: flex;
+}

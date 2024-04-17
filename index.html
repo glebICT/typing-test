@@ -13,6 +13,8 @@
   <body onload="init()">
     <dialog>
       <button autofocus id="close" onclick="document.querySelector('dialog').close();">❌</button>
+      <div class="tables">
+      <div>
       <table>
         <thead>
           <tr>
@@ -26,6 +28,16 @@
             <td>!</td>
             <td>Exclamation Mark</td>
             <td class="orange">Shift + 1</td>
+          </tr>
+          <tr>
+            <td>@</td>
+            <td>At</td>
+            <td class="yellow">Shift + 2</td>
+          </tr>
+          <tr>
+            <td>#</td>
+            <td>Number sign(hash tag)</td>
+            <td class="green">Shift + 3</td>
           </tr>
           <tr>
             <td>"</td>
@@ -49,6 +61,55 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Description</th>
+            <th>Keys</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(</td>
+            <td>Opening parentheses</td>
+            <td class="violet">Shift + 9</td>
+          </tr>
+          <tr>
+            <td>)</td>
+            <td>Closing parentheses</td>
+            <td class="red">Shift + 0</td>
+          </tr>
+          <tr>
+            <td>[</td>
+            <td>Opening bracket </td>
+            <td class="red">Shift + 3</td>
+          </tr>
+          <tr>
+            <td>]</td>
+            <td>Closing bracket</td>
+            <td class="red">Shift + '</td>
+          </tr>
+          <tr>
+            <td><</td>
+            <td>Opening Angle Bracket</td>
+            <td class="violet">Shift + ,</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>Closing Angle Bracket</td>
+            <td class="purple">Shift + .</td>
+          </tr>
+          <tr>
+            <td>:</td>
+            <td>colon</td>
+            <td class="red">Shift + ;</td>
+          </tr>
+        </tbody>
+      </table></div>
+    </div>
       <img src="fingers.png"/>
     </dialog>
     <header>
