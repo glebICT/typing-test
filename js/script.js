@@ -101,6 +101,7 @@ function resetGame() {
   const wpmTag = document.querySelector(".wpm span");
   const  mistakeTag = document.querySelector(".mistake span");
   const cpmTag = document.querySelector(".cpm span");
+  const inpField = document.querySelector(".wrapper .input-field");
   loadParagraph(Number(parseInt(grade)));
   clearInterval(timer);
   timeLeft = maxTime;
