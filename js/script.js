@@ -8,6 +8,12 @@ let timer,
   charIndex = (mistakes = isTyping = 0);
 
 function loadParagraph(index) {
+    if(grade === null){
+    grade = prompt("Please enter your grade", "");
+  }
+  if(person === null){
+    person = prompt("Please enter your full name", "");
+  }
   console.log(index);
   const typingText =  document.querySelector(".typing-text p");
   const inpField = document.querySelector(".wrapper .input-field");
@@ -114,12 +120,7 @@ function resetGame() {
 }
 
 function init(){
-  if(grade === null){
-    grade = prompt("Please enter your grade", "");
-  }
-  if(person === null){
-    person = prompt("Please enter your full name", "");
-  }
+
   if (person != null && grade != null) {
     document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`;
     const level = Number(parseInt(grade))
