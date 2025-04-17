@@ -1,6 +1,6 @@
 const paragraphs = [
   "Once upon a time",
-  "Once upon a time, in a land far away, lived a hamster named Andy.",
+  "Once upon a time, in the forest lived a hamster named Andy.",
   "Once upon a time, in a land far away, lived a turtle named Leonardo. Leonardo was one of the 4 teenage mutant ninja turtles!",
   "Once upon a time, in a deep forest, there lived a curious little squirrel named Barni. He loved exploring the forest and collecting shiny acorns! One day, Barni collected 10 acorns from 3 oak trees.",
   "Once upon a time, in a faraway land, a curious little robot named Byte lived. Byte loved exploring the digital world and collecting bits of data. One day, Byte collected 10 files from 3 different servers. Later that day, Byte spotted its friend and sent a message, 'Hello, Pixel!'.",
