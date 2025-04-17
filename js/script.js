@@ -114,6 +114,12 @@ function resetGame() {
 }
 
 function init(){
+  if(grade === null){
+    grade = prompt("Please enter your grade", "");
+  }
+  if(person === null){
+    person = prompt("Please enter your full name", "");
+  }
   if (person != null && grade != null) {
     document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`;
     const level = Number(parseInt(grade))
