@@ -8,7 +8,7 @@ let timer,
   charIndex = (mistakes = isTyping = 0);
 
 function loadParagraph(index) {
-    if(grade === null){
+    if(grade === null || Number(parseInt(grade)).isNaN()){
     grade = prompt("Please enter your grade", "");
   }
   if(person === null){
