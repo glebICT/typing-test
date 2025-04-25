@@ -124,7 +124,7 @@ function init(){
   if (person != null && grade != null) {
     document.getElementById("name").innerHTML = `Hello ${person} from ${grade}`;
     const level = Number(parseInt(grade))
-    maxTime = (maxTime * level ) + 1;
+    maxTime = (maxTime * level * 3) + 1;
     timeLeft = maxTime;
     console.log(maxTime);
     loadParagraph(level);
