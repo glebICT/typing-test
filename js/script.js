@@ -18,7 +18,7 @@ function loadParagraph(index) {
   const typingText =  document.querySelector(".typing-text p");
   const inpField = document.querySelector(".wrapper .input-field");
   // const ranIndex = Math.floor(Math.random() * paragraphs.length);
-  const ranIndex = index + 1;
+  const ranIndex = index;
   typingText.innerHTML = "";
   paragraphs[ranIndex].split("").forEach((char) => {
     let span = `<span>${char}</span>`;
