@@ -1,7 +1,7 @@
 const paragraphs = [
   "Once upon a time.", // Grade 1: Basic punctuation practice
   "Once upon a time, in Tbilisi's vibrant forests, lived a clever hamster named Andy. Andy gathered 12 shiny acorns daily and shared them with friends.", // Grade 2: Simple sentences, numbers
-  "Once upon a time, in a distant land near the Black Sea, lived a wise turtle named Leonardo. Leonardo explored ancient ruins with his three brothers, solving puzzles and discovering treasures under starry skies.", // Grade 3: Compound sentences, geography
+  "In a distant land near the Black Sea, lived a wise turtle named Leonardo. Leonardo explored ancient ruins with his three brothers: Barni, Andy and Lasha", // Grade 3: Compound sentences, geography
   "In Tbilisi's Mtatsminda Park, a curious squirrel named Barni collected 15 acorns from four oak trees. 'What a bountiful harvest!' Barni exclaimed, while sharing nuts with birds and rabbits.", // Grade 4: Dialogue, exclamation, counting
   "In Georgia's digital valleys, a robot named Byte explored networks, collecting 20 data packets from five servers. Byte messaged its friend: 'გამარჯობა, Pixel! Let's code an app for Vardzia caves.'", // Grade 5: Bilingual, tech intro
   "At GAHS ICT Lab, Alex queried a library database with SQL: SELECT title, pages FROM Books WHERE author = 'ლაშა ბურდული' AND pages > 300 ORDER BY title; This revealed 8 epic tales, shared with 25 classmates via GitHub.", // Grade 6: SQL, local author nod, sorting
