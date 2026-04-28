@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Certificate Back</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            h2 {
+                margin-bottom: 4rem;
+            }
+            @media print {
+                article {
+                    height: auto;
+                    page-break-after: always;
+                    page-break-inside: avoid;
+                }
+            }
+        </style>
+        <script src="js/paragraphs.js"></script>
+        <script>
+            function loadGradeText() {
+                const params = new URLSearchParams(window.location.search);
+                const grade = parseInt(params.get("grade"));
+
+                const container = document.getElementById("grade-content");
+
+                if (grade === null || isNaN(grade)) {
+                    container.innerHTML =
+                        '<div class="error">Error: Please provide a grade parameter (?grade=1)</div>';
+                    return;
+                }
+
+                if (grade < 0 || grade >= paragraphs.length) {
+                    container.innerHTML = `<div class="error">Error: Grade ${grade} not found. Available grades: 0-${paragraphs.length - 1}</div>`;
+                    return;
+                }
+
+                const gradeText = document.getElementById("grade-text");
+
+                gradeText.textContent = paragraphs[grade];
+            }
+        </script>
+    </head>
+
+    <body onload="loadGradeText()">
+        <article>
+            <div class="back-content">
+                <div id="grade-content">
+                    <h2>Typed text</h2>
+                    <div class="grade-text" id="grade-text"></div>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>

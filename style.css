@@ -222,3 +222,57 @@ td.green{
 .tables div{
   display: flex;
 }
+
+/* Certificate back page styles */
+article {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+article::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2rem solid;
+  border-image: linear-gradient(
+    to bottom,
+    rgb(43, 42, 93),
+    rgb(233, 51, 35)
+  ) 1;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+article > * {
+  position: relative;
+  z-index: 1;
+}
+
+.back-content {
+  padding: 3rem;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.grade-text {
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.error {
+  color: rgb(233, 51, 35);
+  font-size: 1.5rem;
+}
